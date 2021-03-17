@@ -1,0 +1,12 @@
+.feature {
+    display: flex;
+
+    &__icon {
+        padding-right: rem(12px);
+    }
+
+    &__description {
+        max-width: rem(90px);
+        line-height: 1.2;
+    }
+}

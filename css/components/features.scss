@@ -1,0 +1,17 @@
+.features {
+    padding-bottom: rem(70px);
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding-right: rem(30px);
+    }
+
+    @include tablets {
+        display: none;
+    }
+}

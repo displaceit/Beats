@@ -1,0 +1,18 @@
+.order-section {
+    background: url("/img/order/order.png") center no-repeat;
+    background-size: cover;
+
+    @include tablets {
+        background: url("/img/order/order768.png") center no-repeat;
+    }
+
+    &_title {
+        color: $white;
+        padding-bottom: rem(50px);
+
+        @include tablets {
+            font-size: rem(52px);
+            padding-bottom: rem(20px);
+        }
+    }
+}

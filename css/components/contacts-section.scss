@@ -1,0 +1,10 @@
+.contacts-section {
+    position: relative;
+    background: url("/img/map/map.png") center no-repeat;
+    background-size: cover;
+
+    @include tablets {
+        background: url("/img/map/map768.png") center no-repeat;
+        background-size: cover;
+    }
+}

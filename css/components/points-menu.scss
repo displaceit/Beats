@@ -1,0 +1,50 @@
+ .points-menu {
+     position: fixed;
+     top: 20%;
+     right: 3%;
+     z-index: $z-points-menu;
+
+     @include tablets {
+         display: none;
+     }
+
+     &__item {
+         width: rem(18px);
+         height: rem(18px);
+         border: rem(2px) solid transparent;
+         border-radius: 50%;
+         margin-bottom: rem(5px);
+         position: relative;
+
+         &_active {
+             border-color: $red;
+         }
+         
+
+         &:hover {
+             width: rem(18px);
+             height: rem(18px);
+             border: rem(2px) solid $red;
+         }
+     }
+
+     &__link {
+         position: absolute;
+         width: rem(8px);
+         height: rem(8px);
+         border-radius: 50%;
+         background: $grey;
+         display: block;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+
+         &:hover {
+             background: $red;
+         }
+     }
+ }
+
+.points-menu__item_active .points-menu__link {
+    background: $red;
+}

@@ -1,0 +1,58 @@
+.radio {
+    display: flex;
+    user-select: none;
+    color: $red;
+    margin-right: rem(25px);
+    cursor: pointer;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &__elem {
+        display: none;
+
+        &:checked ~ .radio__visible {
+            &::before {
+                display: block;
+            }
+        }
+    }
+
+    &__title {
+        padding-left: rem(5px);
+        color: $white;
+    }
+
+    &__visible {
+        width: rem(26px);
+        height: rem(26px);
+        border-radius: 50%;
+        position: relative;
+        background: $white;
+
+        &::before {
+            content: "";
+            display: none;
+            width: rem(14px);
+            height: rem(14px);
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: $red;
+        }
+    }
+
+    &_checkbox {
+        .radio__visible {
+            border-radius: rem(4px);
+
+            &::before {
+                background: url("/img/order/check.svg") center center no-repeat;
+            }
+        }
+    }
+}
+

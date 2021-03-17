@@ -1,0 +1,76 @@
+.form {
+    display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        padding: 0 17%;
+    }
+
+    &__col {
+        flex: 1;
+
+        &:nth-child(2) {
+            padding-left: rem(30px);
+
+            @include tablets {
+                padding-left: 0;
+            }
+        }
+    }
+
+    &__row {
+        display: flex;
+        padding-bottom: rem(8px);
+
+        @include tablets {
+            padding-bottom: rem(12px);
+        }
+    }
+
+    &__block {
+        flex: 1;
+        padding-right: rem(10px);
+    }
+
+    &__title {
+        color: $white;
+        padding-bottom: rem(4px);
+    }
+
+    &__input {
+        width: 100%;
+        border: none;
+        padding: rem(17px) rem(12px);
+        border: rem(3px) solid transparent;
+        border-radius: rem(4px);
+
+        &:focus {
+            box-shadow: 0 0 0 2pt $red;
+            outline: none;
+        }
+
+        &_textarea {
+            height: rem(152px);
+            resize: none;
+        }
+
+        @include tablets {
+            padding: rem(8px) rem(8px);
+            &_textarea {
+                height: rem(90px);
+            }
+        }
+    }
+
+    &__controls {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: rem(20px);
+    }
+
+    &__btns {
+        padding-top: rem(44px);
+        display: flex;
+        justify-content: center;
+    }
+}

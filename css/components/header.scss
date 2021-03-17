@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    align-items: flex-start;
+    padding-top: rem(24px);
+    font-size: rem(18px);
+
+    &__logo {
+        margin-right: rem(38px);
+        width: rem(40px);
+        height: rem(40px);
+    }
+
+    @include tablets {
+        display: flex;
+        justify-content: space-between;
+
+        &__logo {
+            margin-right: 0;
+        }
+    }
+}
+
+.contact.header-contact {
+    @include tablets {
+        display: none;
+    }
+}

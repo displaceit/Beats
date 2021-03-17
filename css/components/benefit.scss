@@ -1,0 +1,53 @@
+.benefit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__img {
+        display: inline-block;
+        position: relative;
+        width: rem(128px);
+        height: rem(128px);
+        border-radius: 50%;
+        background: $lightGrey;
+        margin-bottom: rem(25px);
+
+        @include tablets {
+            margin-bottom: rem(32px);
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: rem(60px);
+        height: rem(60px);
+    }
+
+    &__title {
+        font-size: rem(24px);
+        font-weight: 700;
+        padding-bottom: rem(6px);
+        color: $black;
+
+        @include tablets {
+            padding-bottom: rem(20px);
+        }
+    }
+
+    &__text {
+        text-align: center;
+         width: 90%;
+         line-height: 1.2;
+
+         @include tablets {
+             width: 100%;
+         }
+    }
+
+    @include phones {
+        flex-direction: row;
+    }
+}
