@@ -63,6 +63,8 @@
 
         @include tablets {
             padding: 0 rem(22px) rem(30px) rem(22px);
+            font-size: rem(18px);
+            line-height: 1.5;
         }
     }
 

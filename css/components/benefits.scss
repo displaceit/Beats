@@ -7,7 +7,7 @@
         position: relative;
         
         &::before {
-            content: url("/img/dekor/benefit_separator.svg");
+            content: url("../img/dekor/benefit_separator.svg");
             position: absolute;
             right: 0;
             transform: translate(50%);

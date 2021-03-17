@@ -3,6 +3,10 @@
     align-items: center;
     padding-right: rem(80px);
 
+    @include phones {
+        padding-right: 0;
+    }
+
     &__list {
         display: flex;
     }
@@ -12,19 +16,19 @@
         padding-right: rem(10px);
 
         &_vkonta .social__link {
-            content: url("/img/icons/vk.svg");
+            content: url("../img/icons/vk.svg");
         }
 
         &_fsbook .social__link {
-            content: url("/img/icons/fb.svg");
+            content: url("../img/icons/fb.svg");
         }
 
         &_instag .social__link {
-            content: url("/img/icons/insta.svg");
+            content: url("../img/icons/insta.svg");
         }
 
         &_telegr .social__link {
-            content: url("/img/icons/telegr.svg");
+            content: url("../img/icons/telegr.svg");
         }
     }
 

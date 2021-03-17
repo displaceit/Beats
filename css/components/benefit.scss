@@ -3,6 +3,10 @@
     flex-direction: column;
     align-items: center;
 
+    @include phones {
+        padding-bottom: rem(60px);
+    }
+
     &__img {
         display: inline-block;
         position: relative;
@@ -14,6 +18,11 @@
 
         @include tablets {
             margin-bottom: rem(32px);
+        }
+
+        @include phones {
+            margin-bottom: 0;
+            margin-right: rem(20px);
         }
     }
 
@@ -35,16 +44,26 @@
         @include tablets {
             padding-bottom: rem(20px);
         }
+
+        @include phones {
+            font-size: rem(28px);
+            padding-bottom: rem(10px);
+        }
     }
 
     &__text {
         text-align: center;
-         width: 90%;
-         line-height: 1.2;
+        width: 90%;
+        line-height: 1.2;
 
-         @include tablets {
-             width: 100%;
-         }
+        @include tablets {
+            width: 100%;
+        }
+
+        @include phones {
+            width: 70%;
+            text-align: left;
+        }
     }
 
     @include phones {

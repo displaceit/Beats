@@ -5,6 +5,10 @@
     margin-right: rem(25px);
     cursor: pointer;
 
+    @include phones {
+        padding-bottom: 10px;
+    }
+
     &:last-child {
         margin-right: 0;
     }
@@ -22,6 +26,10 @@
     &__title {
         padding-left: rem(5px);
         color: $white;
+
+        @include phones {
+            font-size: rem(18px);
+        }
     }
 
     &__visible {
@@ -50,7 +58,7 @@
             border-radius: rem(4px);
 
             &::before {
-                background: url("/img/order/check.svg") center center no-repeat;
+                background: url("../img/order/check.svg") center center no-repeat;
             }
         }
     }

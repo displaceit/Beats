@@ -16,9 +16,5 @@
         @include tablets {
             padding-bottom: rem(24px);
         }
-
-        @include phones {
-            font-size: rem(36px);
-        }
     }
 }

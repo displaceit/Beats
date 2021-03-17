@@ -11,6 +11,8 @@
     }
 
     @include phones {
+padding-bottom: rem(66px);
+
         &__title {
             padding-bottom: rem(10px);
         }
