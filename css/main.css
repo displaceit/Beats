@@ -831,6 +831,8 @@ img {
 @media screen and (max-width: 480px) {
   .contacts-section {
     background: url("../img/map/map480.png") top center no-repeat;
+    background-size: contain;
+    max-height: 70vh;
   }
 }
 
@@ -847,7 +849,6 @@ img {
 @media screen and (max-width: 480px) {
   .footer {
     padding: 1.875rem 0;
-    position: relative;
     flex-direction: column;
     align-items: center;
   }
