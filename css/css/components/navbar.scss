@@ -1,0 +1,29 @@
+.navbar {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: rem(18px);
+    @include tablets {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+        padding-right: rem(27px);
+        margin-top: rem(10px);
+
+        &:last-child {
+            padding-right: rem(46px);
+        }
+
+        &:hover {
+            color: $red;
+            transition: 0.3s;
+        }
+    }
+
+}

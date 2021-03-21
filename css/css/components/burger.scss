@@ -1,0 +1,107 @@
+.burger {
+    display: none;
+}
+
+@include tablets {
+    .burger {
+        margin: 0 auto;
+        width: 100%;
+        background-color: transparent;
+        display: block;
+        position: absolute;
+        color: $white;
+        text-align: center;
+        height: 40px;
+    
+        &-label {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 25px;
+            height: 35px;
+            cursor: pointer;
+            z-index: 2;
+        }
+    
+        &__line {
+            position: absolute;
+            top: 8px;
+            right: 0;
+            width: 25px;
+            height: 5px;
+            border-radius: 10px;
+            background-color: $black;
+            transition: .5s all;
+    
+            &_second,
+            &_third {
+                top: 18px;
+            }
+    
+            &_fourth {
+                top: 28px;
+            }
+        }
+    
+        &__menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            transform: translateY(100%);
+            background-color: #333537;
+            font-size: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: .5s all;
+        }
+    
+        &__link {
+            display: block;
+            font-size: 36px;
+            margin-bottom: 25px;
+        }
+    }
+    
+    #burger-menu {
+        display: none;
+    }
+    
+    #burger-menu:checked ~ .burger-label {
+        background-color: #333537;
+        width: 100%;
+        height: 100%;
+    }
+
+    #burger-menu:checked ~ .burger__line {
+        background-color: $white;
+        z-index: 3;
+    }
+
+    #burger-menu:checked ~ .burger__menu {
+        min-height: 100vh;
+        font-size: 24px;
+    }
+    
+    #burger-menu:checked ~.burger__line_first {
+        display: none;
+    }
+    
+    #burger-menu:checked ~.burger__line_second {
+        transform: rotate(45deg);
+        
+    }
+    
+    #burger-menu:checked ~.burger__line_third {
+        transform: rotate(-45deg);
+        
+    }
+    
+    #burger-menu:checked ~.burger__line_fourth {
+        display: none;
+    }
+}

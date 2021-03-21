@@ -1,0 +1,11 @@
+.shop-section {
+    background: $lightGrey;
+    position: relative;
+
+    &::after {
+        content: url("../img/dekor/dekor_04.svg");
+        position: absolute;
+        bottom: rem(-20px);
+        right: 5%;
+    }
+}

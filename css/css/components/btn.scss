@@ -1,0 +1,39 @@
+.btn {
+    display: inline-flex;
+    font-weight: 700;
+    padding: rem(18px) rem(41px);
+    text-transform: uppercase;
+    border-radius: rem(100px);
+    line-height: 1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &_theme-red {
+        background: $red;
+        color: $white;
+
+        @include tablets {
+            padding: rem(25px) rem(55px);
+        }
+
+        &:hover {
+            background: #CA1B36;
+            transition: 0.3s;
+        }
+    }
+
+    &_theme-transp {
+        background: none;
+        color: $white;
+        font-size: rem(16px);
+        text-transform: capitalize;
+        font-weight: 400;
+        padding: rem(18px) rem(10px);
+
+        &:hover {
+            color: $red;
+            transition: 0.3s;
+        }
+    }
+}

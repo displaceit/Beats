@@ -1,0 +1,63 @@
+$containerWidth: 940px;
+$shopContainerWidth: 970px;
+$baseFontSize: 16px;
+
+//breakpoints
+@import './media.scss';
+$tablets: 768px;
+$phones: 480px;
+
+//normalize
+@import url("./normalize.css");
+
+//setups
+@import './layout.scss';
+
+//colors
+$red: #E01F3D;
+$grey: #666;
+$black: #292929;
+$white: #fff;
+$lightGrey: #F8FAF9;
+
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700&display=swap');
+//font-family: 'Play', sans-serif;
+
+//points-menu
+$z-points-menu: 100;
+
+//components
+@import './components/points-menu.scss';
+@import './components/section.scss';
+@import './components/hero.scss';
+@import './components/header.scss';
+@import './components/navbar.scss';
+@import './components/contact.scss';
+@import './components/btn.scss';
+@import './components/features.scss';
+@import './components/feature.scss';
+@import './components/headline.scss';
+@import './components/benefits.scss';
+@import './components/benefit.scss';
+@import './components/benefits-section.scss';
+@import './components/feedback.scss';
+@import './components/responsive-avatar.scss';
+@import './components/feedback-section.scss';
+@import './components/order-section.scss';
+@import './components/form.scss';
+@import './components/radio.scss';
+@import './components/contacts-section.scss';
+@import './components/footer.scss';
+@import './components/contacts.scss';
+@import './components/social.scss';
+@import './components/shop-section.scss';
+@import './components/shop.scss';
+@import './components/slider.scss';
+@import './components/arrow.scss';
+@import './components/popup.scss';
+@import './components/product.scss';
+@import './components/specs.scss';
+@import './components/purchase.scss';
+@import './components/burger.scss';

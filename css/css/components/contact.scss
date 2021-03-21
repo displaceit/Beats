@@ -1,0 +1,17 @@
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: rem(9px);
+
+    &__icon {
+        padding-right: rem(6px);
+        width: rem(18px);
+        height: rem(18px);
+    }
+
+    &:hover {
+        color: $red;
+        transition: 0.3s;
+    }
+}

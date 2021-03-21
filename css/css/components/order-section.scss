@@ -1,0 +1,28 @@
+.order-section {
+    background: url("../img/order/order.png") center no-repeat;
+    background-size: cover;
+
+    @include tablets {
+        background: url("../img/order/order768.png") center no-repeat;
+    }
+
+    @include phones {
+        background: url("../img/order/order480.png") center no-repeat;
+        background-size: cover;
+    }
+
+    &_title {
+        color: $white;
+        padding-bottom: rem(50px);
+
+        @include tablets {
+            font-size: rem(52px);
+            padding-bottom: rem(20px);
+        }
+
+        @include phones {
+            font-size: rem(36px);
+            padding-bottom: rem(40px);
+        }
+    }
+}
