@@ -1,0 +1,24 @@
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__img {
+        padding-left: 2%;
+        padding-right: 7%;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+
+        &__img {
+            padding: 0;
+        }
+    }
+}

@@ -38,6 +38,13 @@ body {
     margin: 0 auto;
 }
 
+.shop-container {
+    position: relative;
+    width: 95%;
+    max-width: $shopContainerWidth;
+    margin: 0 auto;
+}
+
 h1,
 h2,
 h3,
@@ -78,5 +85,5 @@ a {
 
 img {
     display: block;
-    width: 100%;
+    // width: 100%;
 }

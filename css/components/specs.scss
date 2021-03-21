@@ -1,0 +1,17 @@
+.specs {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin-right: rem(90px);
+        padding-bottom: rem(25px);
+    }
+
+    &__value {
+        font-size: rem(18px);
+        font-weight: 700;
+        color: $black;
+    }
+}

@@ -1,4 +1,5 @@
 $containerWidth: 940px;
+$shopContainerWidth: 970px;
 $baseFontSize: 16px;
 
 //breakpoints
@@ -51,4 +52,12 @@ $z-points-menu: 100;
 @import './components/footer.scss';
 @import './components/contacts.scss';
 @import './components/social.scss';
-@import './components/hamburger.scss';
+@import './components/shop-section.scss';
+@import './components/shop.scss';
+@import './components/slider.scss';
+@import './components/arrow.scss';
+@import './components/popup.scss';
+@import './components/product.scss';
+@import './components/specs.scss';
+@import './components/purchase.scss';
+@import './components/burger.scss';

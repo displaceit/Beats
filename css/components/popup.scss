@@ -1,0 +1,76 @@
+.popup {
+    position: relative;
+    width: rem(91px);
+    height: rem(91px);
+    background: #9A9A9A;
+    border-radius: rem(5px);
+    cursor: pointer;
+
+    @include tablets {
+        display: none;
+    }
+
+    &::after {
+        content: url("/img/slider/gear.svg");
+        display: block;
+        position: absolute;
+        width: rem(42px);
+        height: rem(42px);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+        background: $grey;
+        transition: .3s;
+    }
+
+    &:hover .popup__menu {
+        left: rem(91px);
+        opacity: 1;
+    }
+
+    &__menu {
+        position: absolute;
+        left: 9999px;
+        display: block;
+        width: rem(273px);
+        background: rgba(255, 255, 255, 0.9);
+        transition: opacity .3s;
+        padding: rem(30px);
+        opacity: 0;
+        border-radius: rem(5px);
+        cursor: pointer;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: rem(90px);
+            height: 65%;
+            top: 90px;
+            left: -90px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        padding-bottom: rem(27px);
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+
+        &-icon {
+            padding-right: rem(21px);
+        }
+
+        &-specif {
+            color: $black;
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+        }
+    }
+}

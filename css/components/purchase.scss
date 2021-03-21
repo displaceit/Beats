@@ -1,0 +1,11 @@
+.purchase {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__price {
+        font-size: rem(36px);
+        color: $black;
+        padding-right: 5%;
+    }
+}
