@@ -1,0 +1,92 @@
+.burger-menu {
+    display: none;
+}
+
+@include tablets {
+    .burger-menu {
+        display: block;
+        position: relative;
+
+        &__button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 36px;
+            height: 36px;
+            z-index: 30;
+            border-radius: 50%;
+        }
+
+        &__lines {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &__lines,
+        &__lines::before,
+        &__lines::after {
+            position: absolute;
+            width: 26px;
+            height: 5px;
+            background: $black;
+            border-radius: 5px;
+        }
+
+        &__lines::before {
+            content: "";
+            top: 10px;
+        }
+
+        &__lines::after {
+            content: "";
+            top: -10px;
+        }
+
+        &_active &__lines {
+            background-color: transparent;
+
+            &::before {
+                top: 0;
+                transform: rotate(45deg);
+                background: $white;
+            }
+
+            &::after {
+                top: 0;
+                transform: rotate(-45deg);
+                background: $white;
+            }
+        }
+
+        &_active &__nav {
+            left: 0;
+        }
+
+        &__nav {
+            position: fixed;
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            flex-flow: column;
+            padding-top: 15%;
+            width: 100%;
+            height: 100%;
+            background-color: #333537;
+            overflow-x: auto;
+            left: -100%;
+            top: 0;
+            transition: .0s;
+        }
+
+        &__link {
+            padding: 15px;
+            font-size: 36px;
+            color: $white;
+
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+}
