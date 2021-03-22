@@ -62,8 +62,11 @@
     
         &__link {
             display: block;
-            font-size: 36px;
+            font-size: 24px;
             margin-bottom: 25px;
+            &:hover {
+                color: $red;
+            }
         }
     }
     
@@ -83,8 +86,7 @@
     }
 
     #burger-menu:checked ~ .burger__menu {
-        min-height: 100vh;
-        font-size: 24px;
+        min-height: 90vh;
     }
     
     #burger-menu:checked ~.burger__line_first {

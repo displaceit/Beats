@@ -1,4 +1,7 @@
 .product {
+    display: block;
+    padding-left: 50%;
+
     &__popup-menu {
         margin-bottom: rem(30px);
     }
@@ -25,6 +28,9 @@
     }
 
     @include tablets {
+        padding-left: 0;
+        padding-top: 50%;
+
         &__title {
             font-size: rem(28px);
             text-align: center;
@@ -34,7 +40,7 @@
         &__description {
             font-size: rem(16px);
             text-align: center;
-            padding: 0 8% 3% 8%; 
+            padding: 0 8% 3% 8%;
         }
 
         &__specifications {
@@ -46,5 +52,14 @@
             display: flex;
             justify-content: center;
         }
+    }
+
+    @include phones {
+        padding-top: 80%;
+
+        &__title {
+            font-size: rem(30px);
+        }
+
     }
 }

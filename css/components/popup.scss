@@ -11,7 +11,7 @@
     }
 
     &::after {
-        content: url("/img/slider/gear.svg");
+        content: url("../img/slider/gear.svg");
         display: block;
         position: absolute;
         width: rem(42px);
