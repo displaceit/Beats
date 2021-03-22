@@ -392,8 +392,11 @@ img {
   padding: 0 25%;
 }
 @media screen and (max-width: 768px) {
-  .headline__subtitle {
-    padding: 0 11%;
+  .headline {
+    padding: 0 2%;
+  }
+  .headline__title {
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -406,7 +409,7 @@ img {
   .headline__subtitle {
     font-size: 1.125rem;
     line-height: 1.1;
-    padding: 0 3%;
+    padding: 0;
   }
 }
 
@@ -1080,7 +1083,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .product {
-    padding-top: 80%;
+    padding-top: 100%;
   }
   .product__title {
     font-size: 1.875rem;

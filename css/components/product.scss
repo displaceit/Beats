@@ -55,7 +55,7 @@
     }
 
     @include phones {
-        padding-top: 80%;
+        padding-top: 100%;
 
         &__title {
             font-size: rem(30px);

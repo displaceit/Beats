@@ -4,14 +4,18 @@
 
     &__subtitle {
         padding: 0 25%;
+    }
 
-        @include tablets {
-            padding: 0 11%;
+    @include tablets {
+        padding: 0 2%;
+
+        &__title {
+            font-size: rem(32px);
         }
     }
 
     @include phones {
-padding-bottom: rem(66px);
+        padding-bottom: rem(66px);
 
         &__title {
             padding-bottom: rem(10px);
@@ -20,7 +24,7 @@ padding-bottom: rem(66px);
         &__subtitle {
             font-size: rem(18px);
             line-height: 1.1;
-            padding: 0 3%;
+            padding: 0;
         }
     }
 }
