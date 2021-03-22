@@ -1,18 +1,9 @@
 .shop {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background: url("../img/slider/product01.png") left center no-repeat;
-
-    &__content {
-        flex: 1;
-    }
 
     @include tablets {
-        background: url("../img/slider/product01_768.png") top center no-repeat;
-    }
-
-    @include phones {
-        background: url("../img/slider/product01_480.png") top center no-repeat;
+        margin: 0 2%;
     }
 }
