@@ -1029,7 +1029,7 @@ img {
 .product {
   display: flex;
   flex-direction: column;
-  background: url("/img/slider/product01.png") left center no-repeat;
+  background: url("../img/slider/product01.png") left center no-repeat;
   padding-left: 56%;
 }
 .product__popup-menu {
@@ -1054,7 +1054,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .product {
-    background: url("/img/slider/product01_768.png") top center no-repeat;
+    background: url("../img/slider/product01_768.png") top center no-repeat;
     padding-left: 0;
     padding-top: 50%;
   }
