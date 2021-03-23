@@ -9,12 +9,17 @@
         width: rem(80px);
         height: rem(80px);
         border-radius: 50%;
-        right: 43%;
+        right: 45%;
         top: rem(-60px);
 
         @include tablets {
             width: rem(100px);
             height: rem(100px);
+            right: 43%;
+        }
+
+        @include phones {
+            right: 38%;
         }
     }
 

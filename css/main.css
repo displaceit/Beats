@@ -525,6 +525,7 @@ img {
   content: url("../img/dekor/dekor_02.svg");
   left: 10%;
   bottom: -3%;
+  z-index: 10;
 }
 
 .feedback {
@@ -538,13 +539,19 @@ img {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  right: 43%;
+  right: 45%;
   top: -3.75rem;
 }
 @media screen and (max-width: 768px) {
   .feedback::after {
     width: 6.25rem;
     height: 6.25rem;
+    right: 43%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .feedback::after {
+    right: 38%;
   }
 }
 .feedback__block {
@@ -642,7 +649,7 @@ img {
   position: absolute;
   content: url("../img/dekor/dekor_03.svg");
   left: 10%;
-  bottom: -1.25rem;
+  bottom: -1.4375rem;
 }
 
 .order-section {
@@ -909,6 +916,10 @@ img {
   height: 1.875rem;
   border-radius: 50%;
 }
+.social__link:hover {
+  background: #292929;
+  transition: 0.3s;
+}
 
 .shop-section {
   background: #F8FAF9;
@@ -1066,7 +1077,7 @@ img {
   .product__description {
     font-size: 1rem;
     text-align: center;
-    padding: 0 8% 3% 8%;
+    padding: 0 6% 3% 6%;
   }
   .product__specifications {
     display: flex;
@@ -1094,6 +1105,9 @@ img {
 .specs__item {
   margin-right: 5.625rem;
   padding-bottom: 1.5625rem;
+}
+.specs__item:last-child {
+  margin-right: 0;
 }
 .specs__value {
   font-size: 1.125rem;
@@ -1125,8 +1139,8 @@ img {
     position: absolute;
     top: 0;
     right: 0;
-    width: 36px;
-    height: 36px;
+    width: 2.25rem;
+    height: 2.25rem;
     z-index: 30;
     border-radius: 50%;
   }
@@ -1140,28 +1154,32 @@ img {
     width: 26px;
     height: 5px;
     background: #292929;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
+    transition: 0.3s;
   }
   .burger-menu__lines::before {
     content: "";
-    top: 10px;
+    top: 0.625rem;
   }
   .burger-menu__lines::after {
     content: "";
-    top: -10px;
+    top: -0.625rem;
   }
   .burger-menu_active .burger-menu__lines {
     background-color: transparent;
+    transition: 0.3s;
   }
   .burger-menu_active .burger-menu__lines::before {
     top: 0;
     transform: rotate(45deg);
     background: #fff;
+    transition: 0.3s;
   }
   .burger-menu_active .burger-menu__lines::after {
     top: 0;
     transform: rotate(-45deg);
     background: #fff;
+    transition: 0.3s;
   }
   .burger-menu_active .burger-menu__nav {
     left: 0;
@@ -1179,14 +1197,16 @@ img {
     overflow-x: auto;
     left: -100%;
     top: 0;
-    transition: 0s;
+    transition: 0.3s;
   }
   .burger-menu__link {
-    padding: 15px;
-    font-size: 36px;
+    padding: 0.9375rem;
+    font-size: 2rem;
     color: #fff;
   }
   .burger-menu__link:hover {
     color: #E01F3D;
+    transition: 0.2s;
+    font-weight: 700;
   }
 }

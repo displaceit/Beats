@@ -11,8 +11,8 @@
             position: absolute;
             top: 0;
             right: 0;
-            width: 36px;
-            height: 36px;
+            width: rem(36px);
+            height: rem(36px);
             z-index: 30;
             border-radius: 50%;
         }
@@ -30,32 +30,36 @@
             width: 26px;
             height: 5px;
             background: $black;
-            border-radius: 5px;
+            border-radius: rem(5px);
+            transition: .3s;
         }
 
         &__lines::before {
             content: "";
-            top: 10px;
+            top: rem(10px);
         }
 
         &__lines::after {
             content: "";
-            top: -10px;
+            top: rem(-10px);
         }
 
         &_active &__lines {
             background-color: transparent;
+            transition: .3s;
 
             &::before {
                 top: 0;
                 transform: rotate(45deg);
                 background: $white;
+                transition: .3s;
             }
 
             &::after {
                 top: 0;
                 transform: rotate(-45deg);
                 background: $white;
+                transition: .3s;
             }
         }
 
@@ -76,16 +80,18 @@
             overflow-x: auto;
             left: -100%;
             top: 0;
-            transition: .0s;
+            transition: .3s;
         }
 
         &__link {
-            padding: 15px;
-            font-size: 36px;
+            padding: rem(15px);
+            font-size: rem(32px);
             color: $white;
 
             &:hover {
                 color: $red;
+                transition: .2s;
+                font-weight: 700;
             }
         }
     }
