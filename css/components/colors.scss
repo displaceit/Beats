@@ -1,0 +1,24 @@
+.colors {
+    position: relative;
+   display: flex;
+   justify-content: flex-end;
+   height: 100%;
+   z-index: 60;
+
+   &__title {
+       color: $white;
+       font-size: rem(48px);
+       font-weight: 700;
+       text-transform: uppercase;
+       position: absolute;
+       left: rem(84px);
+       top: rem(115px);
+   }
+
+   @include tablets {
+       display: none;
+   }
+   @include phones {
+       display: none;
+   }
+}

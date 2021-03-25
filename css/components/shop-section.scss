@@ -8,4 +8,11 @@
         bottom: rem(-20px);
         right: 5%;
     }
+
+    @include tablets {
+        display: none;
+    }
+    @include phones {
+        display: none;
+    }
 }

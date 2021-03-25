@@ -1,5 +1,4 @@
-$containerWidth: 940px;
-$shopContainerWidth: 970px;
+$containerWidth: 970px;
 $baseFontSize: 16px;
 
 //breakpoints
@@ -26,7 +25,7 @@ $lightGrey: #F8FAF9;
 //font-family: 'Play', sans-serif;
 
 //points-menu
-$z-points-menu: 100;
+$z-points-menu: 50;
 
 //components
 @import './components/points-menu.scss';
@@ -62,3 +61,7 @@ $z-points-menu: 100;
 @import './components/specs.scss';
 @import './components/purchase.scss';
 @import './components/burger-menu.scss';
+@import './components/team.scss';
+@import './components/colors.scss';
+@import './components/colors-section.scss';
+@import './components/colors-menu.scss';

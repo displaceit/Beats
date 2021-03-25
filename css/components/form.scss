@@ -57,7 +57,7 @@
         border-radius: rem(4px);
 
         &:focus {
-            box-shadow: 0 0 0 2pt $red;
+            box-shadow: 0 0 15px 3px $red;
             outline: none;
         }
 

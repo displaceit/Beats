@@ -1,0 +1,64 @@
+.colors-menu {
+    display: flex;
+
+
+    &__line {
+        display: flex;
+        cursor: pointer;
+    }
+
+    &__line_active &__content {
+        display: block;
+        width: rem(524px);
+        padding: rem(40px);
+        opacity: 1;
+        color: $white;
+        font-family: 'Alegreya Sans', sans-serif;
+        line-height: 1.6;
+        background: rgba(51, 53, 55, 0.9);
+    }
+
+    &__slector {
+        background-color: transparent;
+        position: relative;
+        width: rem(102px);
+
+        &_grey {
+            background-color: #999;
+        }
+
+        &_black {
+            background-color: #151515;
+        }
+
+        &_red {
+            background-color: #E01F3C;
+        }
+    }
+
+    &__selector-name {
+        color: $white;
+        font-size: rem(36px);
+        position: absolute;
+        left: 50%;
+        bottom: rem(135px);
+        transform: rotate(-90deg) translate(-50%, -50%);
+        transform-origin: 0 0;
+        white-space: nowrap;
+    }
+
+    &__content {
+        width: 0;
+        padding: 0;
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    @include tablets {
+        display: none;
+    }
+
+    @include phones {
+        display: none;
+    }
+}
