@@ -1314,7 +1314,7 @@ img {
 }
 
 .colors-section {
-  background-image: url("/img/colors/bckgr_01.png");
+  background-image: url("../img/colors/bckgr_01.png");
   background-size: cover;
 }
 
