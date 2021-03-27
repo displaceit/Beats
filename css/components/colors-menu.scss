@@ -5,17 +5,25 @@
     &__line {
         display: flex;
         cursor: pointer;
+        z-index: 40;
     }
 
     &__line_active &__content {
+        text-align: center;
         display: block;
         width: rem(524px);
         padding: rem(40px);
         opacity: 1;
         color: $white;
-        font-family: 'Alegreya Sans', sans-serif;
+        // font-family: 'Alegreya Sans', sans-serif;
         line-height: 1.6;
         background: rgba(51, 53, 55, 0.9);
+        z-index: 40;
+        transition: .7s;
+
+        @include tablets {
+            width: 88vw;
+        }
     }
 
     &__slector {
@@ -34,6 +42,10 @@
         &_red {
             background-color: #E01F3C;
         }
+
+        @include phones {
+            width: rem(60px);
+        }
     }
 
     &__selector-name {
@@ -45,6 +57,10 @@
         transform: rotate(-90deg) translate(-50%, -50%);
         transform-origin: 0 0;
         white-space: nowrap;
+
+        @include phones {
+            font-size: rem(28px);
+        }
     }
 
     &__content {
@@ -52,13 +68,7 @@
         padding: 0;
         opacity: 0;
         overflow: hidden;
+        transition: .7s;
     }
 
-    @include tablets {
-        display: none;
-    }
-
-    @include phones {
-        display: none;
-    }
 }

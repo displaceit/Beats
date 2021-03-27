@@ -1,4 +1,13 @@
 .colors-section {
     background-image: url("/img/colors/bckgr_01.png");
     background-size: cover;
+
+    @include tablets {
+        background-image: url("/img/colors/bckgr_768.png");
+    }
+
+    @include phones {
+        background-image: url("/img/colors/bckgr_480.png");
+        background-size: cover;
+    }
 }

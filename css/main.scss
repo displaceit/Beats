@@ -25,7 +25,7 @@ $lightGrey: #F8FAF9;
 //font-family: 'Play', sans-serif;
 
 //points-menu
-$z-points-menu: 50;
+$z-points-menu: 20;
 
 //components
 @import './components/points-menu.scss';
@@ -65,3 +65,4 @@ $z-points-menu: 50;
 @import './components/colors.scss';
 @import './components/colors-section.scss';
 @import './components/colors-menu.scss';
+@import './components/team-mobile.scss';

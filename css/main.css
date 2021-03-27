@@ -88,7 +88,7 @@ img {
   position: fixed;
   top: 20%;
   right: 3%;
-  z-index: 50;
+  z-index: 20;
 }
 @media screen and (max-width: 768px) {
   .points-menu {
@@ -924,16 +924,6 @@ img {
   bottom: -1.25rem;
   right: 5%;
 }
-@media screen and (max-width: 768px) {
-  .shop-section {
-    display: none;
-  }
-}
-@media screen and (max-width: 480px) {
-  .shop-section {
-    display: none;
-  }
-}
 
 .shop {
   display: flex;
@@ -1263,6 +1253,11 @@ img {
   border-bottom-width: 8px;
   animation: 0.4s;
 }
+@media screen and (max-width: 768px) {
+  .team__triangle {
+    border-color: #666 transparent transparent transparent;
+  }
+}
 .team__list {
   top: 100%;
   width: inherit;
@@ -1270,6 +1265,15 @@ img {
   position: absolute;
   height: 0;
   overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .team__list {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .team__duty {
   color: #292929;
@@ -1291,7 +1295,7 @@ img {
   display: flex;
   justify-content: flex-end;
   height: 100%;
-  z-index: 60;
+  z-index: 50;
 }
 .colors__title {
   color: #fff;
@@ -1303,19 +1307,31 @@ img {
   top: 7.1875rem;
 }
 @media screen and (max-width: 768px) {
-  .colors {
-    display: none;
+  .colors__title {
+    z-index: 10;
   }
 }
 @media screen and (max-width: 480px) {
-  .colors {
-    display: none;
+  .colors__title {
+    font-size: 2rem;
+    left: 0.625rem;
   }
 }
 
 .colors-section {
-  background-image: url("../img/colors/bckgr_01.png");
+  background-image: url("/img/colors/bckgr_01.png");
   background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .colors-section {
+    background-image: url("/img/colors/bckgr_768.png");
+  }
+}
+@media screen and (max-width: 480px) {
+  .colors-section {
+    background-image: url("/img/colors/bckgr_480.png");
+    background-size: cover;
+  }
 }
 
 .colors-menu {
@@ -1324,16 +1340,24 @@ img {
 .colors-menu__line {
   display: flex;
   cursor: pointer;
+  z-index: 40;
 }
 .colors-menu__line_active .colors-menu__content {
+  text-align: center;
   display: block;
   width: 32.75rem;
   padding: 2.5rem;
   opacity: 1;
   color: #fff;
-  font-family: "Alegreya Sans", sans-serif;
   line-height: 1.6;
   background: rgba(51, 53, 55, 0.9);
+  z-index: 40;
+  transition: 0.7s;
+}
+@media screen and (max-width: 768px) {
+  .colors-menu__line_active .colors-menu__content {
+    width: 88vw;
+  }
 }
 .colors-menu__slector {
   background-color: transparent;
@@ -1349,6 +1373,11 @@ img {
 .colors-menu__slector_red {
   background-color: #E01F3C;
 }
+@media screen and (max-width: 480px) {
+  .colors-menu__slector {
+    width: 3.75rem;
+  }
+}
 .colors-menu__selector-name {
   color: #fff;
   font-size: 2.25rem;
@@ -1359,19 +1388,27 @@ img {
   transform-origin: 0 0;
   white-space: nowrap;
 }
+@media screen and (max-width: 480px) {
+  .colors-menu__selector-name {
+    font-size: 1.75rem;
+  }
+}
 .colors-menu__content {
   width: 0;
   padding: 0;
   opacity: 0;
   overflow: hidden;
+  transition: 0.7s;
+}
+
+.team-mobile {
+  display: none;
 }
 @media screen and (max-width: 768px) {
-  .colors-menu {
-    display: none;
-  }
-}
-@media screen and (max-width: 480px) {
-  .colors-menu {
-    display: none;
+  .team-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

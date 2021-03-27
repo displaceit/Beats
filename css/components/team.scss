@@ -51,6 +51,10 @@
         border-bottom-width: 8px;
         animation: .4s;
         }
+
+        @include tablets {
+            border-color: $grey transparent transparent transparent;
+        }
     }
 
     &__list {
@@ -60,6 +64,14 @@
         position: absolute;
         height: 0;
         overflow: hidden;
+
+        @include tablets {
+            position: relative;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     &__duty {
