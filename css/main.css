@@ -1319,17 +1319,17 @@ img {
 }
 
 .colors-section {
-  background-image: url("/img/colors/bckgr_01.png");
+  background-image: url("../img/colors/bckgr_01.png");
   background-size: cover;
 }
 @media screen and (max-width: 768px) {
   .colors-section {
-    background-image: url("/img/colors/bckgr_768.png");
+    background-image: url("../img/colors/bckgr_768.png");
   }
 }
 @media screen and (max-width: 480px) {
   .colors-section {
-    background-image: url("/img/colors/bckgr_480.png");
+    background-image: url("../img/colors/bckgr_480.png");
     background-size: cover;
   }
 }
