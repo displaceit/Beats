@@ -944,7 +944,7 @@ img {
   position: relative;
 }
 .product-slider__arrow {
-  background: url("/img/slider/arrow_left.svg") center center no-repeat;
+  background: url("../img/slider/arrow_left.svg") center center no-repeat;
   width: 0.875rem;
   height: 1.6875rem;
   top: 50%;
