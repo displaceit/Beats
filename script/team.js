@@ -1,29 +1,36 @@
-$(document).ready(() => {
+const openItem = item => {
+    const container = item.closest(".team__item");
+    const contentBlock = container.find(".team__content");
+    const textBlock = contentBlock.find(".team__content-block");
+    const reqHeight = textBlock.height();
+    const arrowDown = $('.team__title-arrow');
 
-    $('.team__person-selector').on('click', function(e) {
-        e.preventDefault();
+    container.addClass("active");
+    contentBlock.height(reqHeight);
+    arrowDown.addClass('team__title-arrow-active');
+}
 
-        const list = $('.team__list')
+const closeEveryItem = container => {
+    const items = container.find(".team__content");
+    const itemContainer = container.find(".team__item");
+    const arrowUp = container.find('.team__title-arrow');
 
-        
-        if (list.hasClass('active')) {
-            list.clearQueue().finish().animate({
-                'height' : '0px',
-                'text-align' : 'center'
-            }, 200);
-            list.removeClass('active');
+    itemContainer.removeClass("active");
+    items.height(0);
+    arrowUp.removeClass('team__title-arrow-active');
+}
 
-            
+$('.team__title').click(e => {
+    const $this = $(e.currentTarget);
+    const container = $this.closest(".team");
+    const elemContainer = $this.closest(".team__item");
 
-        } else {
-            list.clearQueue().finish().animate({
-                'height' : '100%',
-                'display' : 'block'
-            }, 200);
-            list.addClass('active');           
-        }
+    if (elemContainer.hasClass("active")) {
+        closeEveryItem(container);
 
-        $('.team__triangle').toggleClass('team__triangle_active');     
-       
-    });
-});
+    } else {
+        closeEveryItem(container);
+        openItem($this);
+    }
+})
+

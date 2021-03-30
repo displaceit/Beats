@@ -8,18 +8,22 @@
     border: none;
     outline: none;
     cursor: pointer;
+    transition: .3s;
+
+    @include tablets {
+        padding: rem(21px) rem(41px);
+    }
 
     &_theme-red {
         background: $red;
         color: $white;
 
-        @include tablets {
-            padding: rem(25px) rem(55px);
-        }
+        
 
         &:hover {
             background: #CA1B36;
             transition: 0.3s;
+            box-shadow: 0 0 15px 3px $red;
         }
     }
 

@@ -1,8 +1,12 @@
 .product {
     display: flex;
-    flex-direction: column;
-    background: url("../img/slider/product01.png") left center no-repeat;
-    padding-left: 56%;
+
+    &__image {
+        display: flex;
+        align-items: center;
+        min-width: 452px;
+        padding-right: rem(60px);
+    }
 
     &__popup-menu {
         margin-bottom: rem(30px);
@@ -17,8 +21,8 @@
         padding-bottom: rem(24px);
     }
 
-    &__description {
-        padding: 0 15% 5% 0;
+    &__description p {
+        padding: 0 rem(170px) rem(15px) 0;
     }
 
     &__specifications {
@@ -27,43 +31,42 @@
 
     &__order {
         display: flex;
-    }
+    } 
 
     @include tablets {
-        background: url("../img/slider/product01_768.png") top center no-repeat;
-        padding-left: 0;
-        padding-top: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        text-align: center;
+
+        &__image {
+            padding: 0;
+        }
 
         &__title {
             font-size: rem(28px);
-            text-align: center;
-            padding-bottom: rem(14px);
         }
 
-        &__description {
-            font-size: rem(16px);
-            text-align: center;
-            padding: 0 6% 3% 6%;
+        &__description p {
+            padding: 0 rem(80px);
+            margin-bottom: rem(20px);
         }
 
         &__specifications {
-            display: flex;
             justify-content: center;
         }
 
         &__order {
-            display: flex;
             justify-content: center;
-        }
+        } 
     }
 
     @include phones {
-        padding-top: 100%;
-
-        &__title {
-            font-size: rem(30px);
-            padding: 0 5% 2% 5%;
+        &__description p {
+            padding: 0 rem(20px);
+            margin-bottom: rem(20px);
         }
-
     }
 }

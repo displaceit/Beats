@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Beats</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -25,7 +26,8 @@
                                 <li class="navbar__item"><a href="#colors-anchor" class="navbar__link">Цвета</a></li>
                                 <li class="navbar__item"><a href="#feedback-anchor" class="navbar__link">Отзывы</a></li>
                                 <li class="navbar__item"><a href="#" class="navbar__link">Как мы работаем</a></li>
-                                <li class="navbar__item"><a href="#contacts-anchor" class="navbar__link">Контакты</a></li>
+                                <li class="navbar__item"><a href="#contacts-anchor" class="navbar__link">Контакты</a>
+                                </li>
                             </ul>
                         </nav>
                         <a href="tel:+788009039090" class="contact header-contact">
@@ -147,15 +149,16 @@
             <!--Section-->
             <section class="section shop-section" id="shop-anchor">
                 <div class="container">
-                    <div class="shop">
-                        <div class="arrow">
-                            <a href="#" class="arrow__link">
-                                <img src="./img/slider/arrow_left.svg" alt="arrow left" class="arrow__icon">
-                            </a>
+                    <div class="product-slider">
+                        <div class="product-slider__arrows">
+                            <a href="#" class="product-slider__arrow product-slider__arrow_left"></a>
+                            <a href="#" class="product-slider__arrow product-slider__arrow_right"></a>
                         </div>
-                        <div class="slider">
-                            <div class="products">
-                                <div class="product">
+
+                        <div class="products">
+                            <div class="product">
+                                <div class="product__image"><img src="./img/slider/product01.png" alt="Headphones"></div>
+                                <div class="product__description">
                                     <div class="product__popup-menu popup">
                                         <div class="popup__menu">
                                             <ul class="popup__list">
@@ -208,7 +211,6 @@
                                         <p>Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их
                                             и
                                             поднесите к своему iPhone — они мгновенно подключатся к нему.</p>
-
                                     </div>
                                     <div class="product__specifications specs">
                                         <ul class="specs__list">
@@ -229,13 +231,85 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
-                        </div>
-                        <div class="arrow">
-                            <a href="#" class="arrow__link">
-                                <img src="./img/slider/arrow_right.svg" alt="arrow right" class="arrow__icon">
-                            </a>
+                            <!--Product item-->
+                            <div class="product">
+                                <div class="product__image"><img src="./img/slider/product02.png" alt=""></div>
+                                <div class="product__description">
+                                    <div class="product__popup-menu popup">
+                                        <div class="popup__menu">
+                                            <ul class="popup__list">
+                                                <li class="popup__item">
+                                                    <img src="./img/popup/bluetooth.svg" alt="Bluetooth"
+                                                        class="popup__item-icon">
+                                                    <div class="popup__item-specif">
+                                                        <div class="popup__item-title">Bluetooth</div>
+                                                        <div class="popup__item-value">4.0</div>
+                                                    </div>
+                                                </li>
+                                                <li class="popup__item">
+                                                    <img src="./img/popup/road.svg" alt="Дальность"
+                                                        class="popup__item-icon">
+                                                    <div class="popup__item-specif">
+                                                        <div class="popup__item-title">Дальность</div>
+                                                        <div class="popup__item-value">10 м</div>
+                                                    </div>
+                                                </li>
+                                                <li class="popup__item">
+                                                    <img src="./img/popup/charger.svg" alt="Зарядка"
+                                                        class="popup__item-icon">
+                                                    <div class="popup__item-specif">
+                                                        <div class="popup__item-title">Зарядка</div>
+                                                        <div class="popup__item-value">2 ч</div>
+                                                    </div>
+                                                </li>
+                                                <li class="popup__item">
+                                                    <img src="./img/popup/weight.svg" alt="Вес"
+                                                        class="popup__item-icon">
+                                                    <div class="popup__item-specif">
+                                                        <div class="popup__item-title">Вес</div>
+                                                        <div class="popup__item-value">215гр</div>
+                                                    </div>
+                                                </li>
+                                                <li class="popup__item">
+                                                    <img src="./img/popup/weight.svg" alt="Гарантия"
+                                                        class="popup__item-icon">
+                                                    <div class="popup__item-specif">
+                                                        <div class="popup__item-title">Гарантия</div>
+                                                        <div class="popup__item-value">1 год</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h2 class="product__title">beats solo pro. цвет «красный цитрус»</h2>
+                                    <div class="product__description">
+                                        <p>Беспроводные наушники Solo Pro помогают настроиться на творчество. Для этого
+                                            предусмотрено два режима прослушивания: режим с активным шумоподавлением и
+                                            Прозрачный режим.</p>
+                                    </div>
+                                    <div class="product__specifications specs">
+                                        <ul class="specs__list">
+                                            <li class="specs__item">
+                                                <div class="specs__charact">Зарядка</div>
+                                                <div class="specs__value">2 часа</div>
+                                            </li>
+                                            <li class="specs__item">
+                                                <div class="specs__charact">Вес</div>
+                                                <div class="specs__value">215 грамм</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product__order purchase">
+                                        <div class="purchase__price">14 990 ₽</div>
+                                        <div class="purchase__order">
+                                            <a href="#" class="btn btn_theme-red">ЗАКАЗАТЬ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -244,159 +318,121 @@
             <section class="section">
                 <div class="container">
                     <h1 class="section__title">команда</h1>
-                    <div class="team">
-                        <div class="team__block">
-                            <img src="./img/team/team_ava_01.png" alt="Avatar" class="team__avatar">
-                            <div class="team__person-selector">Борис Федорович
-                                <span class="team__triangle"></span>
+                    <!--Team desktop version-->
+                    <ul class="team team_desktop">
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img class="team__member-avatar" src="./img/team/team_ava_01.png" alt="Team member">
                             </div>
-                            <div class="team__list">
-                                <div class="team__duty">Главный технолог</div>
-                                <div class="team__duty-descr">Отвечает за вкусовые качества
-                                    и калорийность.
+                            <button class="team__title" type="button">Борис Федорович<span
+                                    class="team__title-arrow"></span></button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__job">Главный технолог</div>
+                                    <div class="team__job-description">Отвечает за вкусовые качества
+                                        и калорийность.</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="team__block">
-                            <img src="./img/team/team_ava_01.png" alt="Avatar" class="team__avatar">
-                            <div class="team__person-selector">Борис Федорович
-                                <span class="team__triangle"></span>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img class="team__member-avatar" src="./img/team/team_ava_02.png" alt="Team member">
                             </div>
-                            <div class="team__list">
-                                <div class="team__duty">Главный технолог</div>
-                                <div class="team__duty-descr">Отвечает за вкусовые качества
-                                    и калорийность.
+                            <button class="team__title" type="button">Алла Иванова<span
+                                    class="team__title-arrow"></span></button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__job">Специалист по упаковке</div>
+                                    <div class="team__job-description">Автор запоминающегося стиля
+                                        наших батончиков.</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="team__block">
-                            <img src="./img/team/team_ava_01.png" alt="Avatar" class="team__avatar">
-                            <div class="team__person-selector">Борис Федорович
-                                <span class="team__triangle"></span>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img class="team__member-avatar" src="./img/team/team_ava_03.png" alt="Team member">
                             </div>
-                            <div class="team__list">
-                                <div class="team__duty">Главный технолог</div>
-                                <div class="team__duty-descr">Отвечает за вкусовые качества
-                                    и калорийность.
+                            <button class="team__title" type="button">Кирилл Матросов
+                                <span class="team__title-arrow"></span>
+                            </button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__job">Оператор</div>
+                                    <div class="team__job-description">Разработал дизан
+                                        наушников beats solo 3.</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="team__block">
-                            <img src="./img/team/team_ava_01.png" alt="Avatar" class="team__avatar">
-                            <div class="team__person-selector">Борис Федорович
-                                <span class="team__triangle"></span>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img class="team__member-avatar" src="./img/team/team_ava_04.png" alt="Team member">
                             </div>
-                            <div class="team__list">
-                                <div class="team__duty">Главный технолог</div>
-                                <div class="team__duty-descr">Отвечает за вкусовые качества
-                                    и калорийность.
+                            <button class="team__title" type="button">Мила Рыжкова<span
+                                    class="team__title-arrow"></span></button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__job">PR, маркетинг</div>
+                                    <div class="team__job-description">По всем вопросам сотрудничества
+                                        и рекламы писать только Миле.</div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <div class="team-mobile">
-                        <div class="team-mobile__block">
-                            <div class="team__person-selector">Борис Федорович
-                                <span class="team__triangle"></span>
-                            </div>
-                            <div class="team__list">
-                                <img src="./img/team/team_ava_01.png" alt="Avatar">
-                                <div class="team__duty">Главный технолог</div>
-                                <div class="team__duty-descr">Отвечает за вкусовые качества
-                                    и калорийность.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-mobile__block">
-                            <div class="team__person-selector">Борис Федорович
-                                <span class="team__triangle"></span>
-                            </div>
-                            <div class="team__list">
-                                <div class="team__duty">Главный технолог</div>
-                                <div class="team__duty-descr">Отвечает за вкусовые качества
-                                    и калорийность.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-mobile__block">
-                            <div class="team__person-selector">Борис Федорович
-                                <span class="team__triangle"></span>
-                            </div>
-                            <div class="team__list">
-                                <div class="team__duty">Главный технолог</div>
-                                <div class="team__duty-descr">Отвечает за вкусовые качества
-                                    и калорийность.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-mobile__block">
-                            <div class="team__person-selector">Борис Федорович
-                                <span class="team__triangle"></span>
-                            </div>
-                            <div class="team__list">
-                                <div class="team__duty">Главный технолог</div>
-                                <div class="team__duty-descr">Отвечает за вкусовые качества
-                                    и калорийность.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <!--Section-->
             <section class="section colors-section" id="colors-anchor">
 
-                    <div class="colors">
-                        <div class="colors__title">цвета</div>
-                            <ul class="colors-menu">
-                                <li class="colors-menu__line">
-                                    <a href="#" class="colors-menu__slector colors-menu__slector_grey">
-                                        <span class="colors-menu__selector-name">«Атласное серебро»</span>
-                                    </a>
-                                    <div class="colors-menu__content">
-                                        Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли
-                                        пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа
-                                        воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth
-                                        класса
-                                        1 будет сопровождать вас повсюду — куда бы вы ни отправились.
-                                        Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить
-                                        их
-                                        целый день.
-                                    </div>
-                                </li>
-                                <li class="colors-menu__line">
-                                    <a href="#" class="colors-menu__slector colors-menu__slector_black">
-                                        <span class="colors-menu__selector-name">«Чёрный матовый»</span>
-                                    </a>
-                                    <div class="colors-menu__content">
-                                        Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли
-                                        пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа
-                                        воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth
-                                        класса
-                                        1 будет сопровождать вас повсюду — куда бы вы ни отправились.
-                                        Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить
-                                        их
-                                        целый день.
-                                    </div>
-                                </li>
-                                <li class="colors-menu__line">
-                                    <a href="#" class="colors-menu__slector colors-menu__slector_red">
-                                        <span class="colors-menu__selector-name">«Красный цитрус»</span>
-                                    </a>
-                                    <div class="colors-menu__content">
-                                        Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли
-                                        пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа
-                                        воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth
-                                        класса
-                                        1 будет сопровождать вас повсюду — куда бы вы ни отправились.
-                                        Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить
-                                        их
-                                        целый день.
-                                    </div>
-                                </li>
-                            </ul>
-                    </div>
+                <div class="colors">
+                    <div class="colors__title">цвета</div>
+                    <ul class="colors-menu">
+                        <li class="colors-menu__line">
+                            <a href="#" class="colors-menu__slector colors-menu__slector_grey">
+                                <span class="colors-menu__selector-name">«Атласное серебро»</span>
+                            </a>
+                            <div class="colors-menu__content">
+                                Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли
+                                пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа
+                                воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth
+                                класса
+                                1 будет сопровождать вас повсюду — куда бы вы ни отправились.
+                                Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить
+                                их
+                                целый день.
+                            </div>
+                        </li>
+                        <li class="colors-menu__line">
+                            <a href="#" class="colors-menu__slector colors-menu__slector_black">
+                                <span class="colors-menu__selector-name">«Чёрный матовый»</span>
+                            </a>
+                            <div class="colors-menu__content">
+                                Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли
+                                пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа
+                                воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth
+                                класса
+                                1 будет сопровождать вас повсюду — куда бы вы ни отправились.
+                                Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить
+                                их
+                                целый день.
+                            </div>
+                        </li>
+                        <li class="colors-menu__line">
+                            <a href="#" class="colors-menu__slector colors-menu__slector_red">
+                                <span class="colors-menu__selector-name">«Красный цитрус»</span>
+                            </a>
+                            <div class="colors-menu__content">
+                                Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли
+                                пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа
+                                воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth
+                                класса
+                                1 будет сопровождать вас повсюду — куда бы вы ни отправились.
+                                Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить
+                                их
+                                целый день.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
             </section>
             <!--Section-->
@@ -559,12 +595,24 @@
             </nav>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <div id="modal" class="modal">
+        <div class="modal__container">
+            <div class="modal__content">
+                Сообщение отправлено</div>
+            <div class="modal__button-container">
+                <a href="№" class="btn app-close-modal btn_theme-red">Закрыть</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="./script/menu.js"></script>
     <script src="./script/slider.js"></script>
     <script src="./script/team.js"></script>
     <script src="./script/color-menu.js"></script>
+    <script src="./script/shop.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,12 @@
 .products {
-    display: flex;
+    display: block;
+    margin: 0 5px;
+    overflow: hidden;
     position: relative;
+}
+
+.bx-wrapper {
+    border: none;
+    box-shadow: none;
+    margin: 0 auto;
 }

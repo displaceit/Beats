@@ -1,0 +1,49 @@
+.product-slider {
+
+    position: relative;
+    
+    &__arrow {
+        background: url("/img/slider/arrow_left.svg") center center no-repeat;
+        width: rem(14px);
+        height: rem(27px);
+        top: 50%;
+        display: block;
+        position: absolute;
+        z-index: 10;
+        transform: translate(-50%);
+    }
+
+    &__arrow_right {
+        right: 0;
+        transform: rotate(180deg);
+    }
+
+    &__arrow_left {
+        left: 0;
+    }
+
+    @include tablets {
+        &__arrow {
+            top: 30%;
+        }
+        &__arrow_right {
+            right: rem(150px);
+        }
+        &__arrow_left {
+            left: rem(150px);
+        }
+
+    }
+
+    @include phones {
+        &__arrow {
+            top: 30%;
+        }
+        &__arrow_right {
+            right: 0;
+        }
+        &__arrow_left {
+            left: 0;
+        }
+    }
+}
