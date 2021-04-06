@@ -960,7 +960,7 @@ img {
   position: relative;
 }
 .product-slider__arrow {
-  background: url("/img/slider/arrow_left.svg") center center no-repeat;
+  background: url("../img/slider/arrow_left.svg") center center no-repeat;
   width: 0.875rem;
   height: 1.6875rem;
   top: 50%;
@@ -1290,7 +1290,7 @@ img {
   transform: translate(50%, 50%);
   width: 9px;
   height: 9px;
-  background-image: url("/img/team/item_down.svg");
+  background-image: url("../img/team/item_down.svg");
   background-size: cover;
   transition: 0.3s;
 }
@@ -1300,7 +1300,7 @@ img {
   transform: translate(50%, 50%);
   width: 9px;
   height: 9px;
-  background-image: url("/img/team/item_up.svg");
+  background-image: url("../img/team/item_up.svg");
   background-size: cover;
   transition: 0.3s;
 }
@@ -1381,17 +1381,17 @@ img {
 }
 
 .colors-section {
-  background-image: url("/img/colors/bckgr_01.png");
+  background-image: url("../img/colors/bckgr_01.png");
   background-size: cover;
 }
 @media screen and (max-width: 768px) {
   .colors-section {
-    background-image: url("/img/colors/bckgr_768.png");
+    background-image: url("../img/colors/bckgr_768.png");
   }
 }
 @media screen and (max-width: 480px) {
   .colors-section {
-    background-image: url("/img/colors/bckgr_480.png");
+    background-image: url("../img/colors/bckgr_480.png");
     background-size: cover;
   }
 }
@@ -1516,12 +1516,12 @@ img {
   transform: translate(-50%, -50%);
 }
 .player__wrapper {
-  background: url("/img/player/palyer-bkcg.png") top center no-repeat;
+  background: url("./img/player/palyer-bkcg.png") top center no-repeat;
   height: 24.5rem;
 }
 @media screen and (max-width: 480px) {
   .player__wrapper {
-    background: url("/img/player/palyer-bkcg-phones.png") top center no-repeat;
+    background: url("./img/player/palyer-bkcg-phones.png") top center no-repeat;
   }
 }
 .player__controls {
@@ -1534,21 +1534,21 @@ img {
 }
 .player__start.paused {
   position: absolute;
-  background: url("/img/player/paused-icon.svg");
+  background: url("../img/player/paused-icon.svg");
   left: 1.0625rem;
   width: 0.625rem;
   height: 1rem;
 }
 .player__start.play {
   position: absolute;
-  background: url("/img/player/play-icon-small.svg");
+  background: url("../img/player/play-icon-small.svg");
   left: 1.0625rem;
   width: 0.625rem;
   height: 1rem;
 }
 @media screen and (max-width: 480px) {
   .player__start.play {
-    background: url("/img/player/play-icon-small-phones.svg") center no-repeat;
+    background: url("../img/player/play-icon-small-phones.svg") center no-repeat;
     width: 0.4375rem;
     height: 0.625rem;
   }
@@ -1572,7 +1572,7 @@ img {
   left: 0%;
   width: 1rem;
   height: 1rem;
-  background: url("/img/player/duration-icon.svg") center center no-repeat;
+  background: url("../img/player/duration-icon.svg") center center no-repeat;
 }
 .player__duration {
   color: #fff;
