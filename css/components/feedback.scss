@@ -2,6 +2,11 @@
     position: relative;
     overflow: hidden;
 
+    .bx-viewport {
+        overflow: visible !important;
+    }
+
+
     &::after {
         position: absolute;
         content: "";
@@ -19,24 +24,25 @@
         }
 
         @include phones {
-            right: 38%;
+            display: none;
         }
     }
 
 
     &__block {
         background: $lightGrey;
+        display: flex;
         position: relative;
         padding: rem(45px);
 
         @include tablets {
-           padding: rem(64px) 0 rem(45px) 0;
+            padding: rem(64px) 0 rem(45px) 0;
         }
     }
 
     &__block-content {
         display: flex;
-        align-items: center;
+        // align-items: center;
 
         @include tablets {
             flex-direction: column;
@@ -45,12 +51,14 @@
     }
 
     &__avatar-img {
-        width: rem(253px);
-        height: rem(264px);
+        padding: 0 rem(42px);
 
         @include tablets {
-            width: rem(140px);
-            height: rem(140px);
+            margin: 0 auto;
+        }
+
+        @include phones {
+            max-height: rem(160px);
         }
     }
 

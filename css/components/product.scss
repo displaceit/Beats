@@ -1,5 +1,6 @@
 .product {
     display: flex;
+    
 
     &__image {
         display: flex;
@@ -38,11 +39,12 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 0;
+        padding: 0 rem(15px);
         text-align: center;
 
         &__image {
             padding: 0;
+            padding-bottom: rem(49px);
         }
 
         &__title {
@@ -64,6 +66,17 @@
     }
 
     @include phones {
+
+        &__image {
+            min-width: auto;
+            padding-bottom: rem(26px);
+        }
+
+        &__img {
+            width: rem(303px);
+            display: block;
+            left: 50%;
+        }
         &__description p {
             padding: 0 rem(20px);
             margin-bottom: rem(20px);

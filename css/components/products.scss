@@ -1,4 +1,5 @@
 .products {
+    background-color: $lightGrey;
     display: block;
     margin: 0 5px;
     overflow: hidden;
@@ -8,5 +9,11 @@
 .bx-wrapper {
     border: none;
     box-shadow: none;
-    margin: 0 auto;
+    margin-bottom: rem(100px);
+    
 }
+.bx-wrapper img {
+    max-width: none;
+}
+
+

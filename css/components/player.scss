@@ -1,0 +1,89 @@
+.player {
+    display: block;
+    position: relative;
+
+    button {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: transparent;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__wrapper {
+        background: url("/img/player/palyer-bkcg.png") top center no-repeat;
+        height: rem(392px);
+        @include phones {
+            background: url("/img/player/palyer-bkcg-phones.png") top center no-repeat;
+        }
+    }
+
+    &__controls {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #151515;
+        height: rem(35px);
+        width: 100%;
+    }
+
+    &__start.paused {
+        position: absolute;
+        background: url("/img/player/paused-icon.svg");
+        left: rem(17px);
+        width: rem(10px);
+        height: rem(16px);
+    }
+
+    &__start.play {
+        position: absolute;
+        background: url("/img/player/play-icon-small.svg");
+        left: rem(17px);
+        width: rem(10px);
+        height: rem(16px);
+
+        @include phones {
+            background: url("/img/player/play-icon-small-phones.svg") center no-repeat;
+            width: rem(7px);
+            height: rem(10px);
+        }
+    }
+
+    
+    &__playback {
+        position: absolute;
+        width: rem(440px);
+        height: rem(4px);
+        background-color: $black;
+        left: rem(56px);
+        top: 50%;
+        cursor: pointer;
+
+        @include phones {
+            width: rem(250px);
+        }
+    }
+
+    &__playback-button {
+        position: absolute;
+        left: 0%;
+        width: rem(16px);
+        height: rem(16px);
+        background: url("/img/player/duration-icon.svg") center center no-repeat;
+    }
+
+
+    &__duration {
+        color: $white;
+        position: absolute;
+        right: rem(17px);
+        top: 50%;
+        transform: translateY(-50%);
+
+        @include phones {
+            font-size: rem(12px);
+            right: rem(5px);
+        }
+    }
+}

@@ -7,6 +7,7 @@
         position: relative;
         min-width: rem(220px);
         margin-right: rem(20px);
+        cursor: pointer;
     }
 
     &__member {
@@ -59,5 +60,51 @@
 
     &__job {
         color: #000;
+    }
+
+    &_tablets {
+        display: none;
+    }
+
+    @include tablets {
+
+        &_tablets {
+            align-items: center;
+        }
+
+        &__content {
+            margin-bottom: rem(13px);
+        }
+
+        &_desktop {
+            display: none;
+        }
+
+        &_tablets {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__item {
+            max-width: rem(222px);
+            position: relative;
+            margin: 0;
+        }
+        &__title {
+            font-size: rem(22px);
+            margin-bottom: rem(22px);
+        }
+        
+        &__job {
+            color: #000;
+            font-size: rem(18px);
+            font-weight: 700;
+        }
+
+
+        &_tablets &__content {
+            // position: absolute;
+            top: 100%;
+        }
     }
 }

@@ -27,10 +27,10 @@
             top: 30%;
         }
         &__arrow_right {
-            right: rem(150px);
+            right: rem(100px);
         }
         &__arrow_left {
-            left: rem(150px);
+            left: rem(100px);
         }
 
     }
@@ -40,10 +40,10 @@
             top: 30%;
         }
         &__arrow_right {
-            right: 0;
+            right: rem(10px);
         }
         &__arrow_left {
-            left: 0;
+            left: rem(10px);
         }
     }
 }
