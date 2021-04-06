@@ -157,7 +157,9 @@
 
                         <div class="products">
                             <div class="product">
-                                <div class="product__image"><img src="./img/slider/product01.png" alt="Headphones"></div>
+                                <div class="product__image"><img src="./img/slider/product01.png" alt="Headphones"
+                                        class="product__img">
+                                </div>
                                 <div class="product__description">
                                     <div class="product__popup-menu popup">
                                         <div class="popup__menu">
@@ -234,7 +236,8 @@
                             </div>
                             <!--Product item-->
                             <div class="product">
-                                <div class="product__image"><img src="./img/slider/product02.png" alt=""></div>
+                                <div class="product__image"><img src="./img/slider/product02.png" alt="Headphones"
+                                        class="product__img"></div>
                                 <div class="product__description">
                                     <div class="product__popup-menu popup">
                                         <div class="popup__menu">
@@ -317,8 +320,8 @@
             <!--Section-->
             <section class="section">
                 <div class="container">
-                    <h1 class="section__title">команда</h1>
                     <!--Team desktop version-->
+                    <h1 class="section__title">команда</h1>
                     <ul class="team team_desktop">
                         <li class="team__item">
                             <div class="team__member">
@@ -374,6 +377,77 @@
                                     <div class="team__job">PR, маркетинг</div>
                                     <div class="team__job-description">По всем вопросам сотрудничества
                                         и рекламы писать только Миле.</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!--Team tablets, mobile version-->
+                    <ul class="team team_tablets">
+                        <li class="team__item">
+                            <button class="team__title" type="button">Борис Федорович<span
+                                    class="team__title-arrow"></span></button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img class="team__member-avatar" src="./img/team/team_ava_01.png"
+                                            alt="Team member">
+                                    </div>
+                                    <div class="team__content-block">
+                                        <div class="team__job">PR, маркетинг</div>
+                                        <div class="team__job-description">По всем вопросам сотрудничества
+                                            и рекламы писать только Миле.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <button class="team__title" type="button">Алла Иванова<span
+                                    class="team__title-arrow"></span></button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img class="team__member-avatar" src="./img/team/team_ava_02.png"
+                                            alt="Team member">
+                                    </div>
+                                    <div class="team__content-block">
+                                        <div class="team__job">PR, маркетинг</div>
+                                        <div class="team__job-description">По всем вопросам сотрудничества
+                                            и рекламы писать только Миле.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <button class="team__title" type="button">Мила Рыжкова<span
+                                    class="team__title-arrow"></span></button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img class="team__member-avatar" src="./img/team/team_ava_03.png"
+                                            alt="Team member">
+                                    </div>
+                                    <div class="team__content-block">
+                                        <div class="team__job">PR, маркетинг</div>
+                                        <div class="team__job-description">По всем вопросам сотрудничества
+                                            и рекламы писать только Миле.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <button class="team__title" type="button">Мила Рыжкова<span
+                                    class="team__title-arrow"></span></button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img class="team__member-avatar" src="./img/team/team_ava_04.png"
+                                            alt="Team member">
+                                    </div>
+                                    <div class="team__content-block">
+                                        <div class="team__job">PR, маркетинг</div>
+                                        <div class="team__job-description">По всем вопросам сотрудничества
+                                            и рекламы писать только Миле.</div>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -441,7 +515,8 @@
                     <h1 class="section__title">отзывы</h1>
                     <div class="feedback">
                         <div class="feedback__block">
-                            <div class="feedback__block-content">
+                            <!--Feedback item-->
+                            <div class="feedback__block-content" id="feedback-item-01">
                                 <div class="feedback__avatar">
                                     <img src="./img/avatars/feedback_ava01.png" alt="Avatar"
                                         class="feedback__avatar-img">
@@ -457,30 +532,90 @@
                                     <div class="feedback__author">Билли Айлиш</div>
                                 </article>
                             </div>
+                            <!--Feedback item-->
+                            <div class="feedback__block-content" id="feedback-item-02">
+                                <div class="feedback__avatar">
+                                    <img src="./img/avatars/feedback_ava02.png" alt="Avatar"
+                                        class="feedback__avatar-img">
+                                </div>
+                                <article class="feedback__text">
+                                    <h4 class="feedback__title benefit__title">Крутой дизайн</h4>
+                                    <div class="feedback__decription">
+                                        <p>После тренировок всегда хочется быстро закинуться чем-то белковым, потому что
+                                            до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда
+                                            выручают в этом плане. Спасибо производителю за этот качественный и
+                                            экологичный продукт.</p>
+                                    </div>
+                                    <div class="feedback__author">Вадим Грачев</div>
+                                </article>
+                            </div>
+                            <!--Feedback item-->
+                            <div class="feedback__block-content" id="feedback-item-03">
+                                <div class="feedback__avatar">
+                                    <img src="./img/avatars/feedback_ava03.png" alt="Avatar"
+                                        class="feedback__avatar-img">
+                                </div>
+                                <article class="feedback__text">
+                                    <h4 class="feedback__title benefit__title">На долго хватает заряда</h4>
+                                    <div class="feedback__decription">
+                                        <p>Батончики понравились. На мой взгляд слегка завышена цена по сравнению с
+                                            конкурентами, однако, как говорится – оно того стоит. Нравится носить с
+                                            собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют
+                                            голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем
+                                            минус.</p>
+                                    </div>
+                                    <div class="feedback__author">Мария Орлова</div>
+                                </article>
+                            </div>
+                            <!--Feedback item-->
                         </div>
                         <ul class="feedback__switcher">
                             <!--feedback switcher avatar-->
-                            <li class="feedback__switcher-item responsive-avatar responsive-avatar_active">
-                                <a href="#" class="responsive-avatar__link">
+                            <li class="feedback__switcher-item responsive-avatar">
+                                <a href="#feedback-item-01" class="responsive-avatar__link">
                                     <img src="./img/avatars/responsive_avatar01.png" class="responsive-avatar__img"
                                         alt="small avatar">
                                 </a>
                             </li>
                             <!--feedback switcher avatar-->
                             <li class="feedback__switcher-item responsive-avatar">
-                                <a href="#" class="responsive-avatar__link">
+                                <a href="#feedback-item-02" class="responsive-avatar__link">
                                     <img src="./img/avatars/responsive_avatar02.png" class="responsive-avatar__img"
                                         alt="small avatar">
                                 </a>
                             </li>
                             <!--feedback switcher avatar-->
                             <li class="feedback__switcher-item responsive-avatar">
-                                <a href="#" class="responsive-avatar__link">
+                                <a href="#feedback-item-03" class="responsive-avatar__link">
                                     <img src="./img/avatars/responsive_avatar03.png" class="responsive-avatar__img"
                                         alt="small avatar">
                                 </a>
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </section>
+            <!--Section-->
+            <section class="section player-section">
+                <div class="container">
+                    <h2 class="section__title">как мы работаем</h2>
+                    <div class="player-section__container">
+                        <div class="player">
+                            <div class="player__wrapper">
+                                <div class="player__elem" id="yt-player"></div>
+                                <div class="player__splash"></div>
+                            </div>
+                            <div class="player__controls">
+                                <button class="player__start play"></button>
+                                <div class="player__playback">
+                                    <button class="player__playback-button"></button>
+                                </div>
+                                <div class="player__duration">
+                                    <span class="player__duration-complited">0:00</span> :
+                                    <span class="player__duration-estimate">0:00</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -605,14 +740,18 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="./script/menu.js"></script>
     <script src="./script/slider.js"></script>
     <script src="./script/team.js"></script>
     <script src="./script/color-menu.js"></script>
     <script src="./script/shop.js"></script>
+    <script src="./script/feedback.js"></script>
+    <script src="./script/player.js"></script>
 </body>
 
 </html>
